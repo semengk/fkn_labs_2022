@@ -14,10 +14,10 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Hero(
-        tag: 'imageHero',
-        child: Stack(fit: StackFit.expand, children: [
+    return Hero(
+      tag: hero,
+      child: Scaffold(
+        body: Stack(fit: StackFit.expand, children: [
           Image.network(
             path,
             fit: BoxFit.cover,
